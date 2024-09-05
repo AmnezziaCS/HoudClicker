@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  HoudClicker
 //
-//  Created by Chaymae Mechouahi on 05/09/2024.
+//  Created by Chayman Mechouahi on 05/09/2024.
 //
 
 import UIKit
