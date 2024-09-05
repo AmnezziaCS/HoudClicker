@@ -1,41 +1,14 @@
 # HoudClicker 🎩
 
-**HoudClicker** est une application mobile ludique développée en Swift où le joueur doit cliquer sur la tête d'un beau gosse pour accumuler des points. Le but du jeu est d'obtenir le plus grand nombre de clics possible en un temps limité. Simple mais addictif, HoudClicker promet des heures de divertissement ! 😎
+**HoudClicker** is a fun mobile application developed in Swift where the player must click on the head of a handsome guy to accumulate points. The goal of the game is to get as many clicks as possible. Simple but addictive, HoudClicker promises hours of entertainment! 😎
 
-## Fonctionnalités
+## Features
 
-- **Clics illimités** : Cliquez autant que possible sur la tête du beau gosse pour accumuler des points.
-- **Effets visuels amusants** : Des animations et des effets sonores sont déclenchés à chaque clic.
+- **Unlimited clicks**: Click as much as possible on the handsome guy's head to accumulate points.
+- **High score**: Keep track of your best score and try to beat it.
+- **Sound effects**: Enjoy the sound effects that make the game even more fun.
 
-## Installation
+## Used technologies
 
-### Prérequis
-
-- Xcode x ou une version ultérieure.
-- Swift x ou une version ultérieure.
-- iOS x ou supérieur.
-
-1. Clonez le dépôt dans votre répertoire local :
-
-   git clone https://github.com/amnezziaa/HoudClicker.git
-
-    Ouvrez le projet dans Xcode :
-
-    bash
-
-    cd houdini-clicker
-    open HoudiniClicker.xcodeproj
-
-    Sélectionnez votre simulateur ou appareil physique dans Xcode.
-
-    Cliquez sur le bouton "Run" pour lancer l'application.
-
-## Comment jouer
-
-    Appuyez sur la tête du beau gosse autant de fois que possible.
-    Obtenez des points pour chaque clic.
-
-## Technologies utilisées
-
-    Langage : Swift
-    Interface utilisateur : UIKit / SwiftUI
+- **Swift**: The application was developed in Swift.
+- **Xcode**: The IDE used to develop the application.
