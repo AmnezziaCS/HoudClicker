@@ -12,6 +12,7 @@ class ViewController: UIViewController {
         print("C'est bien clique")
     }
     
+    @IBOutlet weak var conteur: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
     }
