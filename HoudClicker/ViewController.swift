@@ -8,10 +8,12 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBAction func onClickButton(_ sender: UIButton) {
+        print("C'est bien clique")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
 
