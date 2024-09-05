@@ -24,8 +24,8 @@
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="2" height="-1"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHw-7M-YfF">
-                                <rect key="frame" x="50" y="291" width="293" height="435"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHw-7M-YfF">
+                                <rect key="frame" x="50" y="318" width="293" height="450"/>
                                 <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="Hugo"/>
@@ -33,6 +33,12 @@
                                     <action selector="onClickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8tN-yd-d1D"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tu l'as frappé : " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OyQ-Hc-qTo">
+                                <rect key="frame" x="100" y="228" width="193" height="70"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -41,12 +47,19 @@
                             <constraint firstItem="UHw-7M-YfF" firstAttribute="top" secondItem="3gy-T3-Uvr" secondAttribute="bottom" constant="100" id="3eh-t9-iGC"/>
                             <constraint firstItem="3gy-T3-Uvr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="3vp-Yl-tdK"/>
                             <constraint firstItem="UHw-7M-YfF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="6Gw-ZU-VoD"/>
+                            <constraint firstItem="OyQ-Hc-qTo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="9JO-9K-b71"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OyQ-Hc-qTo" secondAttribute="trailing" constant="100" id="Eje-hy-IYx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3gy-T3-Uvr" secondAttribute="trailing" constant="100" id="OjM-Gj-5cG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UHw-7M-YfF" secondAttribute="bottom" constant="50" id="Uaf-3n-3nC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3gy-T3-Uvr" secondAttribute="bottom" constant="600" id="VkF-Dl-71w"/>
                             <constraint firstItem="3gy-T3-Uvr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="i5O-Iq-ia3"/>
+                            <constraint firstItem="OyQ-Hc-qTo" firstAttribute="top" secondItem="3gy-T3-Uvr" secondAttribute="bottom" constant="10" id="xfL-mJ-hP5"/>
+                            <constraint firstItem="UHw-7M-YfF" firstAttribute="top" secondItem="OyQ-Hc-qTo" secondAttribute="bottom" constant="20" id="yPI-91-gJ3"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="conteur" destination="OyQ-Hc-qTo" id="tC9-l0-yd7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
