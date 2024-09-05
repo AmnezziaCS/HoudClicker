@@ -12,13 +12,24 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var conteur: UILabel!
 
+    var counter = 0 {
+        didSet {
+            conteur.text = "\(counter)"
+        }
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
     }
 
-    @IBAction func onClickButton(_ sender: UIButton) {
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         BackgroundMusicPlayer.shared.playMusic(filename: "BackgroundMusic")
+    }
+
+    @IBAction func onClickButton(_ sender: UIButton) {
+        counter += 1
         let alert = UIAlertController(title: "Attention", message: "Frappe plus!", preferredStyle: .alert)
         
         self.present(alert, animated: true) {
